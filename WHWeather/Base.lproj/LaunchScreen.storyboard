@@ -19,26 +19,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBg" translatesAutoresizingMaskIntoConstraints="NO" id="cCY-kk-1L5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yibeijing" translatesAutoresizingMaskIntoConstraints="NO" id="cCY-kk-1L5">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun09" translatesAutoresizingMaskIntoConstraints="NO" id="oae-eU-8Xp">
-                                <rect key="frame" x="48" y="105" width="224" height="224"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yitouming" translatesAutoresizingMaskIntoConstraints="NO" id="oae-eU-8Xp">
+                                <rect key="frame" x="48" y="144" width="224" height="224"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oae-eU-8Xp" secondAttribute="height" multiplier="1:1" id="J9a-8r-QXK"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather Helper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEp-hr-h2T">
-                                <rect key="frame" x="83" y="337" width="154" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="易天气" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEp-hr-h2T">
+                                <rect key="frame" x="83" y="376" width="154" height="51"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="0UQ-bg-pvj"/>
                                     <constraint firstAttribute="width" constant="154" id="ktT-ey-OR7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.97494682591623039" green="0.22948740111370014" blue="0.14706177830080477" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -47,7 +47,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cCY-kk-1L5" secondAttribute="trailing" id="6Pq-tn-dvf"/>
                             <constraint firstItem="cCY-kk-1L5" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="FbR-zv-py6"/>
-                            <constraint firstItem="oae-eU-8Xp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.764" id="T7D-W9-7IP"/>
+                            <constraint firstItem="oae-eU-8Xp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.9" id="T7D-W9-7IP"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="cCY-kk-1L5" secondAttribute="bottom" id="Wg9-H3-ta1"/>
                             <constraint firstItem="eEp-hr-h2T" firstAttribute="top" secondItem="oae-eU-8Xp" secondAttribute="bottom" constant="8" id="Z6b-g3-qk1"/>
                             <constraint firstItem="cCY-kk-1L5" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aBR-3t-0sm"/>
@@ -59,11 +59,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="355"/>
+            <point key="canvasLocation" x="280" y="327"/>
         </scene>
     </scenes>
     <resources>
-        <image name="loginBg" width="220" height="220"/>
-        <image name="sun09" width="512" height="512"/>
+        <image name="yibeijing" width="1024" height="1024"/>
+        <image name="yitouming" width="1024" height="1024"/>
     </resources>
 </document>

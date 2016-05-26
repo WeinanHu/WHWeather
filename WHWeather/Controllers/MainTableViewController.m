@@ -74,7 +74,7 @@
     self.mainHeaderView.weatherHumLabel.text = [NSString stringWithFormat:@"相对湿度:%@°",hum];
     self.mainHeaderView.weatherWindDirectionLabel.text = [NSString stringWithFormat:@"风向:%@",dir];
     NSString *tmpStr = [[NSString alloc]init];
-    if ([sc isEqualToString:@"微风"]||self.weatherNow.wind[@"sc"]==nil || [sc isEqualToString:@"loading"]) {
+    if ([sc isEqualToString:@"微风"]||self.weatherNow.wind[@"sc"]==nil || [sc isEqualToString:@"..."]) {
         tmpStr = @"";
     }else{
         tmpStr = @"级";
@@ -87,7 +87,7 @@
 #pragma mark - 转换null字符串成loading
 -(NSString*)changeStringIfNull:(NSString*)str{
     if (!str) {
-        str = @"loading";
+        str = @"...";
         
     }
    
@@ -191,6 +191,15 @@
 #pragma mark - 视图加载
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //偏移效果
+    UIInterpolatingMotionEffect * xEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+    xEffect.minimumRelativeValue =  [NSNumber numberWithFloat:-15.0];
+    xEffect.maximumRelativeValue = [NSNumber numberWithFloat:15.0];
+    [self.view addMotionEffect:xEffect];
+    UIInterpolatingMotionEffect * yEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+    yEffect.minimumRelativeValue =  [NSNumber numberWithFloat:-15.0];
+    yEffect.maximumRelativeValue = [NSNumber numberWithFloat:15.0];
+    [self.view addMotionEffect:yEffect];
 //        [WHWeatherGetData searchAllChina];
 //        [WHWeatherGetData searchAllAttractions];
 //        [WHWeatherGetData searchAllCondition];
